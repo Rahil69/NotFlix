@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import BrandMark from "./brand-mark";
 
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
 
@@ -22,7 +23,7 @@ function AccountHeader({ user, onSignOut, signingOut }) {
     <header className="account-header">
       <div className="account-header-inner">
         <Link className="brand" href="/" aria-label="FlixNotMV home">
-          <span className="brand-mark"><span aria-hidden="true">▶</span></span>
+          <span className="brand-mark"><BrandMark /></span>
           <span>FlixNot<span className="brand-accent">MV</span></span>
         </Link>
         <nav className="account-nav" aria-label="Account navigation">

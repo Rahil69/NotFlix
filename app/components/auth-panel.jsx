@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import BrandMark from "./brand-mark";
 
 function formHref(path, returnTo) {
   return returnTo === "/account" ? path : `${path}?next=${encodeURIComponent(returnTo)}`;
@@ -54,7 +55,7 @@ export default function AuthPanel({ mode, returnTo = "/account", initialNotice =
   return (
     <main className="auth-page">
       <Link className="brand auth-brand" href="/" aria-label="FlixNotMV home">
-        <span className="brand-mark"><span aria-hidden="true">▶</span></span>
+        <span className="brand-mark"><BrandMark /></span>
         <span>FlixNot<span className="brand-accent">MV</span></span>
       </Link>
       <section className="auth-panel" aria-labelledby="auth-title">

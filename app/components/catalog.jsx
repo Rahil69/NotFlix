@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import AccountLink from "./account-link";
+import BrandMark from "./brand-mark";
 import HomeCollections from "./home-collections";
 import MovieCard from "./movie-card";
 import { isAdultTitle } from "../../lib/content-filter";
@@ -40,7 +41,7 @@ function Icon({ name, size = 18 }) {
 function Brand() {
   return (
     <Link className="brand" href="/" aria-label="FlixNotMV home">
-      <span className="brand-mark"><Icon name="play" size={24} /></span>
+      <span className="brand-mark"><BrandMark /></span>
       <span>FlixNot<span className="brand-accent">MV</span></span>
     </Link>
   );
