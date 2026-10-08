@@ -9,7 +9,7 @@
 .watch-brand > span:last-child > span { color: #db5a4d; }
 .watch-brand-mark { display: grid; width: 25px; height: 25px; place-items: center; border: 1px solid rgba(229,70,61,.58); border-radius: 8px 8px 8px 3px; color: var(--accent); transform: rotate(-5deg); }
 .watch-brand-mark svg { transform: rotate(5deg); }
-.watch-header-label { justify-self: end; color: #87868a; font-size: 8px; font-weight: 650; letter-spacing: 1.6px; }
+.watch-header > .account-link { justify-self: end; }
 .watch-content { position: relative; z-index: 1; width: min(1500px, 100%); margin: 0 auto; padding: 31px clamp(20px, 5vw, 82px) 25px; }
 .watch-page-title { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
 .watch-eyebrow { display: flex; align-items: center; gap: 8px; color: #d5897b; font-size: 8px; font-weight: 700; letter-spacing: 1.8px; }
@@ -81,7 +81,6 @@
   .watch-header { height: 58px; padding-inline: 17px; }
   .watch-back-link { gap: 0; }
   .watch-back-link span { display: none; }
-  .watch-header-label { font-size: 7px; }
   .watch-content { padding: 21px 0 24px; }
   .watch-page-title { align-items: center; padding: 0 17px; margin-bottom: 15px; }
   .watch-page-title h1 { max-width: calc(100vw - 125px); font-size: clamp(25px, 7vw, 33px); }

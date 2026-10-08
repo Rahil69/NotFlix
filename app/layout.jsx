@@ -6,6 +6,7 @@ export const metadata = {
   title: "FlixNotMV | Discover films and series",
   description: "Browse popular movies and series, find a title, and settle in.",
   applicationName: "FlixNotMV",
+  icons: { icon: "/flixnotmv-icon.svg?v=2" },
   appleWebApp: { capable: true, statusBarStyle: "black-translucent", title: "FlixNotMV" },
 };
 

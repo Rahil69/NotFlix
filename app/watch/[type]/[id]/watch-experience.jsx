@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import AccountLink from "../../../components/account-link";
 
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/";
 
@@ -219,7 +220,7 @@ export default function WatchExperience({ id, mediaType, initialSeason = 1, init
       <header className="watch-header">
         <Link className="watch-back-link" href="/" aria-label="Back to discover"><BackIcon /><span>Discover</span></Link>
         <Brand />
-        <span className="watch-header-label">NOW SHOWING</span>
+        <AccountLink />
       </header>
 
       <div className="watch-content" id="watch-content">
