@@ -106,22 +106,22 @@
 .account-nav a, .account-nav > span { position: relative; display: flex; align-items: center; color: #888b93; font-size: 13px; font-weight: 600; }
 .account-nav a:hover, .account-nav > span[aria-current="page"] { color: #f4f4f6; }
 .account-nav > span[aria-current="page"]::after { position: absolute; right: 0; bottom: 0; left: 0; height: 2px; background: #e50914; content: ""; }
-.account-user { display: flex; min-width: 0; align-items: center; gap: 11px; margin-left: auto; color: #a8aab0; font-size: 11px; }
-.account-avatar { display: grid; width: 30px; height: 30px; flex: 0 0 auto; place-items: center; border: 1px solid rgba(229,9,20,.35); border-radius: 50%; background: #191116; color: #ff858b; font-size: 11px; font-weight: 700; }
+.account-user { display: flex; min-width: 0; align-items: center; gap: 11px; margin-left: auto; color: #a8aab0; font-size: 12px; }
+.account-avatar { display: grid; width: 30px; height: 30px; flex: 0 0 auto; place-items: center; border: 1px solid rgba(229,9,20,.35); border-radius: 50%; background: #191116; color: #ff858b; font-size: 12px; font-weight: 700; }
 .account-email { max-width: 230px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.account-signout, .account-signin { display: inline-flex; min-height: 35px; flex: 0 0 auto; align-items: center; justify-content: center; padding: 0 13px; border: 1px solid rgba(255,255,255,.12); border-radius: 5px; background: #111318; color: #e2e3e6; cursor: pointer; font-size: 10px; font-weight: 650; transition: border-color .18s ease, background .18s ease; }
+.account-signout, .account-signin { display: inline-flex; min-height: 35px; flex: 0 0 auto; align-items: center; justify-content: center; padding: 0 13px; border: 1px solid rgba(255,255,255,.12); border-radius: 5px; background: #111318; color: #e2e3e6; cursor: pointer; font-size: 12px; font-weight: 650; transition: border-color .18s ease, background .18s ease; }
 .account-signout:hover:not(:disabled), .account-signin:hover { border-color: rgba(255,255,255,.28); background: #181a20; }
 .account-signout:disabled { cursor: wait; opacity: .65; }
 .account-content { width: min(1180px, 100%); margin: 0 auto; padding: 61px clamp(20px, 5vw, 70px) 42px; }
 .account-intro { padding-bottom: 36px; border-bottom: 1px solid rgba(255,255,255,.08); }
-.account-kicker, .account-section-kicker, .account-item-kicker { color: #d56a6f; font-size: 9px; font-weight: 750; letter-spacing: 1.45px; }
+.account-kicker, .account-section-kicker, .account-item-kicker { color: #d56a6f; font-size: 10px; font-weight: 750; letter-spacing: 1.25px; }
 .account-intro h1 { margin: 0 0 8px; color: #f7f7f8; font-size: clamp(30px, 4vw, 42px); font-weight: 740; line-height: 1.1; }
-.account-intro p { margin: 0; color: #9b9da5; font-size: 13px; line-height: 1.6; }
+.account-intro p { margin: 0; color: #9b9da5; font-size: 14px; line-height: 1.6; }
 .account-section { margin-top: 37px; }
 .account-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 17px; }
 .account-section-heading-copy h2 { margin: 0; color: #f2f2f4; font-size: 21px; font-weight: 690; }
-.account-section-heading-copy p { margin: 5px 0 0; color: #858890; font-size: 11px; }
-.account-count-pill { display: inline-flex; min-height: 29px; flex: 0 0 auto; align-items: center; padding: 0 11px; border: 1px solid rgba(255,255,255,.1); border-radius: 999px; color: #b4b6bd; font-size: 10px; font-weight: 600; }
+.account-section-heading-copy p { margin: 5px 0 0; color: #858890; font-size: 12px; }
+.account-count-pill { display: inline-flex; min-height: 29px; flex: 0 0 auto; align-items: center; padding: 0 11px; border: 1px solid rgba(255,255,255,.1); border-radius: 999px; color: #b4b6bd; font-size: 11px; font-weight: 600; }
 .history-list { display: grid; gap: 13px; }
 .history-card { display: grid; min-width: 0; grid-template-columns: 145px minmax(0, 1fr); align-items: center; gap: 25px; padding: 15px; border: 1px solid rgba(255,255,255,.09); border-radius: 8px; background: #0e1014; transition: border-color .18s ease, background .18s ease; }
 .history-card:hover { border-color: rgba(255,255,255,.16); background: #101217; }
@@ -132,33 +132,33 @@
 .history-poster:hover .history-play, .history-poster:focus-visible .history-play { opacity: 1; transform: translateY(0); }
 .history-card-content { display: flex; min-width: 0; flex-direction: column; justify-content: center; padding: 8px 10px 8px 0; }
 .history-card-heading { display: flex; align-items: start; justify-content: space-between; gap: 14px; }
-.account-item-kicker { color: #858890; font-size: 8px; letter-spacing: 1.1px; }
+.account-item-kicker { color: #858890; font-size: 10px; letter-spacing: 1px; }
 .history-card-heading h2 { overflow: hidden; margin: 6px 0 0; color: #f3f3f5; font-size: clamp(20px, 2.5vw, 27px); font-weight: 700; line-height: 1.2; text-overflow: ellipsis; }
-.history-card-heading p { margin: 7px 0 0; color: #999ba2; font-size: 11px; }
-.history-percent { flex: 0 0 auto; padding-top: 2px; color: #f0787d; font-size: 13px; font-weight: 700; }
+.history-card-heading p { margin: 7px 0 0; color: #999ba2; font-size: 12px; }
+.history-percent { flex: 0 0 auto; padding-top: 2px; color: #f0787d; font-size: 14px; font-weight: 700; }
 .history-progress { height: 5px; overflow: hidden; margin-top: 23px; border-radius: 4px; background: #292b31; }
 .history-progress span { display: block; height: 100%; border-radius: inherit; background: #e50914; }
-.history-card-details { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 15px; margin-top: 9px; color: #8f9299; font-size: 10px; }
+.history-card-details { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 15px; margin-top: 9px; color: #8f9299; font-size: 12px; }
 .history-card-details span:first-child { color: #d0d1d5; }
 .history-card-footer { display: flex; align-items: center; gap: 15px; margin-top: 22px; }
 .history-card-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
-.history-continue { display: inline-flex; min-height: 40px; align-items: center; gap: 8px; padding: 0 14px; border: 1px solid #e50914; border-radius: 5px; background: #e50914; color: white; font-size: 11px; font-weight: 700; transition: background .18s ease, border-color .18s ease; }
+.history-continue { display: inline-flex; min-height: 40px; align-items: center; gap: 8px; padding: 0 14px; border: 1px solid #e50914; border-radius: 5px; background: #e50914; color: white; font-size: 12px; font-weight: 700; transition: background .18s ease, border-color .18s ease; }
 .history-continue:hover { border-color: #f21a26; background: #f11320; }
 .history-continue svg { width: 14px; height: 14px; }
-.history-card-actions button { display: inline-flex; min-height: 36px; align-items: center; padding: 0 5px; border: 0; background: transparent; color: #9698a0; cursor: pointer; font: inherit; font-size: 10px; font-weight: 600; white-space: nowrap; }
+.history-card-actions button { display: inline-flex; min-height: 36px; align-items: center; padding: 0 5px; border: 0; background: transparent; color: #9698a0; cursor: pointer; font: inherit; font-size: 12px; font-weight: 600; white-space: nowrap; }
 .history-card-actions button:hover:not(:disabled) { color: #ff777e; }
 .history-card-actions button:disabled { cursor: wait; opacity: .65; }
 .account-empty { display: flex; min-height: 150px; align-items: center; gap: 19px; padding: 23px; border: 1px solid rgba(255,255,255,.09); border-radius: 8px; background: #0e1014; }
 .account-empty-mark { display: grid; width: 48px; height: 48px; flex: 0 0 auto; place-items: center; border: 1px solid rgba(255,255,255,.11); border-radius: 50%; color: #ef777b; }
 .account-empty-mark svg { width: 21px; height: 21px; }
 .account-empty > div:not(.account-empty-mark) { min-width: 0; flex: 1; }
-.account-empty h3 { margin: 6px 0 5px; color: #ededf0; font-size: 16px; }
-.account-empty p { margin: 0; color: #9698a0; font-size: 11px; line-height: 1.6; }
-.account-primary-link { display: inline-flex; min-height: 41px; flex: 0 0 auto; align-items: center; justify-content: center; gap: 9px; margin-left: auto; padding: 0 15px; border: 1px solid #e50914; border-radius: 5px; background: #e50914; color: white; cursor: pointer; font-size: 11px; font-weight: 700; transition: background .18s ease; }
+.account-empty h3 { margin: 6px 0 5px; color: #ededf0; font-size: 17px; }
+.account-empty p { margin: 0; color: #9698a0; font-size: 12px; line-height: 1.6; }
+.account-primary-link { display: inline-flex; min-height: 41px; flex: 0 0 auto; align-items: center; justify-content: center; gap: 9px; margin-left: auto; padding: 0 15px; border: 1px solid #e50914; border-radius: 5px; background: #e50914; color: white; cursor: pointer; font-size: 12px; font-weight: 700; transition: background .18s ease; }
 .account-primary-link:hover { background: #f11320; }
 .account-empty-error { border-color: rgba(255,80,88,.25); }
 .account-empty-error .account-error-copy { min-width: 0; flex: 1; }
-.account-empty-error button { flex: 0 0 auto; padding: 0; border: 0; background: transparent; color: #ff9298; cursor: pointer; font: inherit; font-size: 11px; font-weight: 650; }
+.account-empty-error button { flex: 0 0 auto; padding: 0; border: 0; background: transparent; color: #ff9298; cursor: pointer; font: inherit; font-size: 12px; font-weight: 650; }
 .account-footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 38px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.08); }
 .account-back-link { display: inline-flex; min-height: 43px; align-items: center; gap: 9px; padding: 0 14px; border: 1px solid rgba(255,255,255,.13); border-radius: 6px; background: #111318; color: #e3e4e7; font-size: 12px; font-weight: 650; transition: border-color .18s ease, background .18s ease; }
 .account-back-link > svg { width: 16px; height: 16px; flex: 0 0 auto; color: #ff777e; }
@@ -166,12 +166,12 @@
 .account-content-state { display: grid; min-height: calc(100vh - 68px); place-items: center; padding-top: 32px; padding-bottom: 45px; }
 .account-state { display: flex; width: min(520px, 100%); flex-direction: column; align-items: center; padding: 52px 28px; border: 1px solid rgba(255,255,255,.09); border-radius: 8px; background: #0e1014; text-align: center; }
 .account-state h1 { margin: 10px 0 7px; color: #f3f3f5; font-size: clamp(24px, 4vw, 31px); line-height: 1.2; }
-.account-state > p { max-width: 360px; margin: 0; color: #999ba2; font-size: 12px; line-height: 1.6; }
+.account-state > p { max-width: 360px; margin: 0; color: #999ba2; font-size: 14px; line-height: 1.6; }
 .account-state .account-primary-link { margin: 24px 0 0; }
-.account-loading { display: flex; min-height: 48vh; flex-direction: column; align-items: center; justify-content: center; gap: 14px; color: #9b9da5; font-size: 12px; }
+.account-loading { display: flex; min-height: 48vh; flex-direction: column; align-items: center; justify-content: center; gap: 14px; color: #9b9da5; font-size: 14px; }
 .account-loading p { margin: 0; }
 .account-state-button { min-width: 125px; }
-.account-error { margin-top: 25px; padding: 12px; border: 1px solid rgba(255,80,88,.28); border-radius: 5px; color: #ff9b9f; font-size: 11px; }
+.account-error { margin-top: 25px; padding: 12px; border: 1px solid rgba(255,80,88,.28); border-radius: 5px; color: #ff9b9f; font-size: 12px; }
 .section-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 17px; }
 .section-title-group { display: flex; min-width: 0; align-items: center; gap: 11px; }
 .section-icon { display: grid; width: 29px; height: 29px; flex: 0 0 auto; place-items: center; border-radius: 7px; background: #e50914; color: white; box-shadow: 0 4px 14px rgba(229,9,20,.22); }
@@ -288,26 +288,33 @@
   .site-footer > span:nth-child(2) { margin-right: 0; }
   .site-footer > span:last-child { margin-left: auto; font-size: 7px; }
   .account-header-inner { min-height: 62px; gap: 12px; padding-inline: 18px; }
-  .account-header .brand { font-size: 15px; }
+  .account-header .brand { font-size: 17px; }
   .account-nav { display: none; }
-  .account-user { gap: 8px; font-size: 9px; }
+  .account-user { gap: 8px; font-size: 11px; }
   .account-avatar { width: 27px; height: 27px; }
   .account-email { max-width: 31vw; }
-  .account-signout, .account-signin { min-height: 33px; padding-inline: 10px; font-size: 9px; }
+  .account-signout, .account-signin { min-height: 35px; padding-inline: 10px; font-size: 11px; }
   .account-content { padding: 42px 20px 35px; }
   .account-intro { padding-bottom: 27px; }
   .account-intro h1 { max-width: 520px; font-size: clamp(29px, 6vw, 36px); }
   .account-section { margin-top: 30px; }
-  .account-section-heading-copy h2 { font-size: 18px; }
+  .account-section-heading-copy h2 { font-size: 19px; }
+  .account-section-heading-copy p { font-size: 12px; }
+  .account-count-pill { font-size: 11px; }
   .history-card { grid-template-columns: 108px minmax(0, 1fr); gap: 17px; padding: 12px; }
   .history-poster { width: 108px; }
   .history-card-content { padding: 4px 3px 4px 0; }
   .history-card-heading h2 { font-size: 20px; }
+  .history-card-heading p { font-size: 12px; }
+  .history-percent { font-size: 13px; }
+  .history-card-details { font-size: 11px; }
+  .history-continue { font-size: 11px; }
+  .history-card-actions button { font-size: 11px; }
   .history-progress { margin-top: 16px; }
   .history-card-footer { margin-top: 15px; }
   .account-empty { gap: 14px; padding: 18px; }
   .account-empty-mark { width: 40px; height: 40px; }
-  .account-empty .account-primary-link { padding-inline: 11px; font-size: 10px; }
+  .account-empty .account-primary-link { padding-inline: 11px; font-size: 11px; }
   .account-content-state { min-height: calc(100vh - 62px); padding-top: 25px; }
   .auth-panel { padding: 25px 20px; }
 }
@@ -330,30 +337,30 @@
   .account-email { display: none; }
   .account-content { padding: 34px 14px 30px; }
   .account-intro h1 { max-width: 320px; font-size: 30px; }
-  .account-intro p { max-width: 300px; font-size: 11px; }
+  .account-intro p { max-width: 300px; font-size: 12px; }
   .account-section-heading { align-items: center; gap: 9px; }
-  .account-section-heading-copy h2 { font-size: 16px; }
-  .account-section-heading-copy p { max-width: 225px; font-size: 10px; }
-  .account-count-pill { min-height: 26px; padding-inline: 8px; font-size: 9px; }
+  .account-section-heading-copy h2 { font-size: 18px; }
+  .account-section-heading-copy p { max-width: 225px; font-size: 11px; }
+  .account-count-pill { min-height: 26px; padding-inline: 8px; font-size: 10px; }
   .history-card { grid-template-columns: 78px minmax(0, 1fr); gap: 11px; padding: 9px; }
   .history-poster { width: 78px; }
   .history-play { right: 5px; bottom: 5px; width: 28px; height: 28px; opacity: 1; transform: none; }
   .history-card-heading { gap: 5px; }
-  .account-item-kicker { font-size: 7px; }
-  .history-card-heading h2 { margin-top: 4px; font-size: 16px; }
-  .history-card-heading p { margin-top: 4px; font-size: 9px; }
-  .history-percent { font-size: 10px; }
+  .account-item-kicker { font-size: 9px; }
+  .history-card-heading h2 { margin-top: 4px; font-size: 17px; }
+  .history-card-heading p { margin-top: 4px; font-size: 11px; }
+  .history-percent { font-size: 12px; }
   .history-progress { height: 4px; margin-top: 12px; }
-  .history-card-details { flex-direction: column; gap: 4px; margin-top: 7px; font-size: 8px; }
+  .history-card-details { flex-direction: column; gap: 4px; margin-top: 7px; font-size: 10px; }
   .history-card-footer { margin-top: 11px; }
   .history-card-actions { gap: 7px; }
-  .history-continue { min-height: 34px; gap: 5px; padding-inline: 8px; font-size: 9px; }
+  .history-continue { min-height: 34px; gap: 5px; padding-inline: 8px; font-size: 10px; }
   .history-continue svg { width: 12px; height: 12px; }
-  .history-card-actions button { min-height: 32px; font-size: 9px; }
+  .history-card-actions button { min-height: 32px; font-size: 10px; }
   .account-empty { display: grid; grid-template-columns: 38px minmax(0, 1fr); gap: 11px; padding: 15px; }
   .account-empty-mark { width: 38px; height: 38px; }
-  .account-empty h3 { font-size: 14px; }
-  .account-empty p { font-size: 10px; }
+  .account-empty h3 { font-size: 16px; }
+  .account-empty p { font-size: 11px; }
   .account-empty .account-primary-link { grid-column: 1 / -1; width: 100%; }
   .account-empty-error .account-error-copy { grid-column: 1 / -1; }
   .account-empty-error button { grid-column: 1 / -1; }
