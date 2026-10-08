@@ -10,7 +10,7 @@ A Next.js movie and series discovery app powered by TMDB. It includes search and
 
 ## Setup
 
-1. Copy `.env.example` to `.env.local` and fill in the values:
+1. Create `.env.local` in the project root and fill in these values:
 
    ```env
    TMDB_API_READ_ACCESS_TOKEN=your_tmdb_read_access_token
@@ -55,4 +55,4 @@ The player loads from a third-party embed provider; FlixNotMV does not host vide
 
 ## Before Deploying
 
-Add the three environment variables from `.env.example` to your hosting provider, configure the production auth callback URL in Supabase, and verify the database migration has been applied. `.env.local` is excluded from Git by `.gitignore` and should stay out of version control.
+Add the three environment variables listed in Setup to your hosting provider, configure the production auth callback URL in Supabase, and verify the database migration has been applied. `.env.local` is excluded from Git by `.gitignore` and should stay out of version control.
